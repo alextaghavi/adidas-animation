@@ -1,8 +1,10 @@
-@import url('"https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 *:focus {
@@ -31,10 +33,11 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  perspective: 1000px;
 }
 
 .container {
-  width: 50%;
+  width: 75%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -42,6 +45,7 @@ body {
 }
 
 .card {
+  transform-style: preserve-3d;
   min-height: 80vh;
   width: 35rem;
   border-radius: 30px;
@@ -59,6 +63,7 @@ body {
 .card .sneaker img {
   width: 20rem;
   z-index: 2;
+  transition: all 0.75s ease-out;
 }
 .card .sneaker .circle {
   width: 15rem;
@@ -67,20 +72,26 @@ body {
   position: absolute;
   border-radius: 50%;
   z-index: 1;
+  transition: all 0.75s ease-out;
 }
 .card .info h1 {
   font-size: 3rem;
+  transition: all 0.75s ease-out;
+  text-align: center;
 }
 .card .info h3 {
   font-size: 1.25rem;
+  text-align: center;
   padding: 2rem 0rem;
   color: #585858;
   font-weight: lighter;
+  transition: all 0.75s ease-out;
 }
 .card .info .sizes {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  transition: all 0.75s ease-out;
 }
 .card .info .sizes button {
   padding: 0.5rem 2rem;
@@ -97,7 +108,7 @@ body {
   color: white;
 }
 .card .info .purchase {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .card .info .purchase button {
   width: 100%;
@@ -108,6 +119,7 @@ body {
   cursor: pointer;
   border-radius: 30px;
   font-weight: bolder;
+  transition: all 0.75s ease-out;
 }
 
 /*# sourceMappingURL=style.css.map */
