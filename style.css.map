@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["scss/_origin.scss","scss/_variables.scss","scss/_mixins.scss"],"names":[],"mappings":"AAIQ;AAER;EACI;EACA;EACA;;;AAGJ;EACI;;;AAGJ;EACI;EACA,aCRkB;EDSlB,aCNkB;EDOlB;EACA,OCbkB;EDclB;EErBA,SFsBiB;EErBjB,QFqBmB;EEjBnB,QDNkB;ECOlB,ODPkB;;;AD2BtB;EACI","file":"style.css"}
