@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Poppins:200,500,700&display=swap");
+@import url('"https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"');
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -12,7 +12,6 @@
 html, body {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
   letter-spacing: 0.0625rem;
   color: #5d5d5d;
   font-size: 100%;
@@ -24,6 +23,91 @@ html, body {
 
 li {
   list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  min-height: 80vh;
+  width: 35rem;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+.card .sneaker {
+  min-height: 35vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card .sneaker img {
+  width: 20rem;
+  z-index: 2;
+}
+.card .sneaker .circle {
+  width: 15rem;
+  height: 15rem;
+  background: linear-gradient(to right, rgba(245, 70, 66, 0.75), rgba(8, 83, 156, 0.75));
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+.card .info h1 {
+  font-size: 3rem;
+}
+.card .info h3 {
+  font-size: 1.25rem;
+  padding: 2rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+}
+.card .info .sizes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card .info .sizes button {
+  padding: 0.5rem 2rem;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+}
+.card .info .sizes button.active {
+  background: #585858;
+  color: white;
+}
+.card .info .purchase {
+  margin-top: 3rem;
+}
+.card .info .purchase button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: #f54642;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
 }
 
 /*# sourceMappingURL=style.css.map */
